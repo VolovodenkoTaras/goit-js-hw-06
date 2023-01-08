@@ -11,14 +11,19 @@ const refs = {
   ingredients: document.querySelector('#ingredients'),
 }
 
-const arr = []
+// const arr = []
+// for (let i = 0; i < ingredients.length; i += 1) {
+//   const li = document.createElement('li');
+//   li.classList.add('item');
+//   li.textContent = ingredients[i];
+//   arr.push(li)
+// }
 
-for (let i = 0; i < ingredients.length; i += 1) {
+const arr = ingredients.map(ingredient => {
   const li = document.createElement('li');
   li.classList.add('item');
-  li.textContent = ingredients[i];
-  arr.push(li)
-}
+  li.textContent = ingredient;
+  return li;
+})
 
-// console.log(arr);
 refs.ingredients.append(...arr)
