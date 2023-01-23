@@ -68,7 +68,7 @@ console.log("Number of categories:", refs.categories.childElementCount);
 /*
 перебираю массив items методом forEach и возвращаю на каждой итерации console.log шаблонной строки 
 куда вывожу методом querySelector на передаваемом элементе массива находящийся текст в заголовке h2
-методом textContent и количество дочерних элементов списка ul методом childElementCount
+свойством textContent и количество дочерних элементов списка ul свойством childElementCount
 */
 refs.items.forEach((el) => {
     console.log(`
